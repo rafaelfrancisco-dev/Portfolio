@@ -3,7 +3,7 @@
 	import DarkModeToggle from "./Components/DarkModeToggle.svelte";
 </script>
 
-<main class="bg-white dark:bg-black text-white dark:text-black">
+<main>
 	<DarkModeToggle/>
 	<MainComponent/>
 </main>
