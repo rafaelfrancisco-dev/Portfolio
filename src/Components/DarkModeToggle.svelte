@@ -16,12 +16,10 @@
     }
 </script>
 
-<div>
-    <button class="bg-gray-200 dark:bg-gray-800 rounded p-3 h-10 w-10" on:click={toggle}>
-        {#if isDark}
-            <img alt="Dark mode toggle" src="images/moon-stroke.svg">
-        {:else }
-            <img alt="Dark mode toggle" src="images/moon-fill.svg">
-        {/if}
-    </button>
-</div>
+<button aria-label="Enable Dark Mode" class="bg-gray-200 dark:bg-gray-800 rounded p-3 h-10 w-10" on:click={toggle}>
+    {#if isDark}
+        <img alt="Dark mode toggle" src="images/moon-stroke.svg">
+    {:else }
+        <img alt="Dark mode toggle" src="images/moon-fill.svg">
+    {/if}
+</button>
